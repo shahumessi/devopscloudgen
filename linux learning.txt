@@ -1,0 +1,41 @@
+-------------------------linux -------------------------------
+##############################################################
+user-management   useradd,user del,passwd,chmod,
+file-management   cat,touch,vim,nano,
+package-management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+grep 
+sed
+tail
+sort
+cut -d
+sed
+awk
+wc
+diff
+echo
+
+shell scripting
