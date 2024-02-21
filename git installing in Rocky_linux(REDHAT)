@@ -1,0 +1,23 @@
+------------------------------------------------------------
+###################installing of git#########################
+------------------------------------------------------------
+yum update - y
+hostnamectl set-hostname <hostname >
+exec bash
+hostname 
+yum install vim wget tar make unzip - y
+yum install curl-devel expat-devel get text-devel openssl-devel zlib-devel - y
+yum install gcc perl-ExtUtils-MakeMaker - y
+cd /opt
+wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.43.0.tar.gz
+tar -xvf git-2.43.2.tar.gz
+make prefix=/usr/local/git all 
+NOTES: above command will convert the .c and .h files to obj files(.o)
+cd /usr/local/
+make prefix=/usr/local/git install
+vim ~/.bashrc
+export PATH=$PATH:/usr/local/git/bin
+exit with :wq!
+source ~/.bashrc
+git --version
+
